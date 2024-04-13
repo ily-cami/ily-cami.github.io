@@ -8,7 +8,7 @@ function updateScoreboard() {
 function createBubble() {
   const bubble = document.createElement("div");
   bubble.className = "bubble";
-  const size = Math.random() * 100 + 50; // Random size between 50 and 150 pixels
+  const size = Math.random() * 100 + 50;
   const x = Math.random() * (window.innerWidth - size);
   const y = Math.random() * (window.innerHeight - size);
   bubble.style.width = size + "px";
@@ -16,7 +16,7 @@ function createBubble() {
   bubble.style.top = y + "px";
   bubble.style.left = x + "px";
 
-  let popped = false; // Flag to check if the bubble was popped
+  let popped = false;
 
   bubble.addEventListener("click", () => {
     bubble.remove();
@@ -33,18 +33,17 @@ function createBubble() {
       bubble.style.opacity = 0;
       setTimeout(() => {
         if (!popped) {
-          // If the bubble wasn't popped, decrease the score
           score--;
           updateScoreboard();
         }
         bubble.remove();
-      }, 300);
-    }, 300);
-  }, 1000);
+      }, 175);
+    }, 175);
+  }, 425);
 }
 
 function createBubbles() {
-  setInterval(createBubble, 1000);
+  setInterval(createBubble, 800);
 }
 
 createBubbles();
