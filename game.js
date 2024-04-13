@@ -37,9 +37,9 @@ function createBubble() {
           updateScoreboard();
         }
         bubble.remove();
-      }, 175);
-    }, 175);
-  }, 425);
+      }, 150);
+    }, 150);
+  }, 350);
 }
 
 function createBubbles() {
