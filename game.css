@@ -33,3 +33,7 @@ html {
   font-size: 3vw;
   text-align: center;
 }
+
+#date {
+  margin: 0;
+}
