@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const emojiBoard = document.getElementById('emoji-board');
 
     // GitHub API endpoint for emojis
-    const GITHUB_API_URL = 'https://api.github.com/repos/your-username/emoji-wall/contents/emojis.json';
-    const ACCESS_TOKEN = 'your-personal-access-token'; // Replace with your own token
+    const GITHUB_API_URL = 'https://api.github.com/repos/ily-cami/ily-cami.github.io/contents/emoji.json';
+    const ACCESS_TOKEN = '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'; // Replace with your own token
 
     // Function to fetch emojis from GitHub repository
     async function fetchEmojis() {
