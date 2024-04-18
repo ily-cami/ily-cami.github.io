@@ -1,0 +1,74 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fce4ec; /* Change background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form container styles */
+.form-container {
+  background-color: #fff; /* Set box background color */
+  padding: 20px;
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-container select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Emoji container styles */
+.emoji-container {
+  display: flex;
+  justify-content: center;
+}
+
+.emoji-container .emoji {
+  font-size: 2em;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Emoji board styles */
+#emoji-board {
+  background-color: #fff; /* Set box background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.emoji {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px; /* Add rounded corners to each emoji */
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emoji p {
+  margin: 0;
+}
+
+.timestamp {
+  color: #777;
+  font-size: 0.8em;
+}
+
+.name {
+  font-weight: bold;
+}
