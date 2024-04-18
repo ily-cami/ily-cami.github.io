@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const GITHUB_API_URL = 'https://api.github.com/repos/ily-cami/ily-cami.github.io/contents/emoji.json';
     const ACCESS_TOKEN = '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'; // Replace with your own token
 
-    // Function to fetch emojis from GitHub repository
+    // Function to fetch emojis from GitHub repository 
     async function fetchEmojis() {
         try {
             const response = await fetch(GITHUB_API_URL, {
