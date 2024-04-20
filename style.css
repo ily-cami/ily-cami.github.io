@@ -41,7 +41,7 @@ body {
   }
 }
 
-#game-link {
+#link {
   font-size: 24px;
   color: #333;
   text-decoration: none;
@@ -49,9 +49,10 @@ body {
   padding: 10px 20px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  margin-top: 10px;
 }
 
-#game-link:hover {
+#link:hover {
   background-color: #333;
   color: #fce4ec;
 }
