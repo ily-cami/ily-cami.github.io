@@ -1,0 +1,92 @@
+/* Sets up the entire HTML and body to be the full height of the viewport, removes margins and padding, and prevents scrolling */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* The .aquarium class defines the main container for the fish, setting its relative positioning and full size, and giving it a soothing blue background color */
+.aquarium {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #70c5ff;
+}
+
+/* The .fish class sets the absolute positioning of each fish emoji, and assigns the swim animation which allows them to move left and right */
+.fish {
+  position: absolute;
+  animation: swim linear infinite; /* Applies a continuous linear animation named 'swim' */
+}
+
+/* Individual styling for each fish, setting their position and scalable font size to a larger, more visible range */
+#fish1 {
+  top: 20%;
+  left: 5%;
+  font-size: 5vw;
+  animation-duration: 3s;
+}
+#fish2 {
+  top: 50%;
+  left: 30%;
+  font-size: 6vw;
+  animation-duration: 4s;
+}
+#fish3 {
+  top: 10%;
+  left: 60%;
+  font-size: 5.5vw;
+  animation-duration: 5s;
+}
+#fish4 {
+  top: 70%;
+  left: 20%;
+  font-size: 5.5vw;
+  animation-duration: 3s;
+}
+#fish5 {
+  top: 30%;
+  left: 80%;
+  font-size: 5vw;
+  animation-duration: 4s;
+}
+#fish6 {
+  top: 80%;
+  left: 50%;
+  font-size: 6vw;
+  animation-duration: 6s;
+}
+#fish7 {
+  top: 40%;
+  left: 10%;
+  font-size: 5.5vw;
+  animation-duration: 3s;
+}
+#fish8 {
+  top: 55%;
+  left: 75%;
+  font-size: 6vw;
+  animation-duration: 4s;
+}
+
+/* Defines the keyframes for the 'swim' animation, adjusting the move to avoid going off-screen */
+@keyframes swim {
+  0%,
+  100% {
+    transform: translateX(0%);
+  } /* Start and end at the original position */
+  50% {
+    transform: translateX(calc(20vw - 100%));
+  } /* Moves only 10vw to the left and right from the starting position */
+}
+
+/* Styling for the audio player to align it to the center and give some vertical space */
+.audio-player {
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  text-align: center;
+  font-size: 75%;
+}
