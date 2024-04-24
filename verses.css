@@ -1,0 +1,58 @@
+body {
+  background-color: #fce4ec;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Ensures boxes stack in a column */
+  min-height: 100vh;
+}
+
+.verse-box {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2vw; /* Use relative padding */
+  margin: 2vw; /* Use relative margin */
+  width: 80vw; /* Scales width based on screen size */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.verse {
+  font-size: 3vw; /* Relative font size */
+  text-align: center;
+  color: #333;
+  margin-bottom: 1.5vw; /* Add relative spacing */
+}
+
+.location {
+  font-size: 2.5vw; /* Relative font size */
+  text-align: center;
+  color: #555;
+  margin-bottom: 1.5vw; /* Add relative spacing */
+}
+
+.emoji {
+  text-align: center;
+  font-size: 4vw; /* Relative font size */
+}
+
+@media (min-width: 768px) {
+  /* On larger screens, use fixed max-width and smaller font sizes */
+  .verse-box {
+    width: 60vw;
+  }
+
+  .verse {
+    font-size: 24px;
+  }
+
+  .location {
+    font-size: 20px;
+  }
+
+  .emoji {
+    font-size: 28px;
+  }
+}
