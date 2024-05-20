@@ -50,6 +50,7 @@ body {
   border-radius: 5px;
   transition: all 0.3s ease;
   margin: 5px;
+  text-align: center;
 }
 
 #link:hover {
